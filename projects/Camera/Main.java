@@ -7,6 +7,5 @@ public class Main {
 
         c1.takePicture();
         c1.printAllImages();
-        System.out.println("Test");
     }
 }
