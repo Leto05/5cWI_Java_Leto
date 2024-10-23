@@ -27,4 +27,12 @@ public class SDCard {
         FileList.add(file);
     }
 
+    public List<File> getList() {
+        return FileList;
+    }
+
+    public void setUsedCapacity(float usedCapacity) {
+        this.usedCapacity = usedCapacity;
+    }
+
 }
