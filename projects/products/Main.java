@@ -14,7 +14,5 @@ public class Main {
         gui.addProduct(s1);
         gui.addProduct(c1);
         gui.run();
-
-        System.out.println("Test");
     }
 }
