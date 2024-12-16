@@ -7,14 +7,12 @@ public class Shoe implements Products {
 
     @Override
     public String getName() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getName'");
+        return name;
     }
 
     @Override
     public int getPrice() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+        return price;
     }
 
     public Shoe(String name, int price) {
