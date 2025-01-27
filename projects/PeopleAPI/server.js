@@ -16,8 +16,24 @@ const data =
         { name: "Leto", age: 19 },
     ]
 
-app.get("/peeople", (req, res) => {
+app.get("/people", (req, res) => {
     res.send(data);
-})
+});
+
+app.get("/people/:id", (req, res) => {
+    let id = req.params.id;
+    res.send(data[id]);
+});
+
+app.delete("/people/:id", (req, res) => {
+    let id = req.params.id;
+    data.splice(id, 1);
+    res.send("done");
+});
+
+app.post("/people", (req, res) => {
+    data.push(req.body);
+    res.send(req.body);
+});
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
